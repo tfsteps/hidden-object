@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hidden</title>
+	<style type="text/css">
+		.body {
+			background-image: url(4.jpg);
+			background-size: cover;
+		}
+	</style>
+</head>
+<body style="margin: 0; padding: 0;" class="body">
+	<div style=" background: none; text-align: center; margin-top: -30px; ">
+		<div style="height: 350px; width: 200px; background: orange;">
+			<h2 style="padding-top: 10px;">Найди</h2>
+			<h3 class="k">1.Книги</h3>
+			<h3 class="ruk">2.Рюкзак</h3>
+			<h3 class="m">3.Жидкое мыло</h3>
+			<h3 class="r">4.Ручка</h3>
+			<h2>Очки</h2>
+			<h2>( <span class="score"></span> )</h2>
+		</div>
+		<div class="rukzak">
+			<img src="5.png" style="height: 120px; margin-left: 200px; margin-top: 140px; position: fixed;">
+		</div>
+		<div style="margin-top: 90px; margin-left: 100px; position: fixed;" class="kniga">
+			<img src="6.png" style="height: 130px;">
+		</div>
+		<div style="margin-top: 95px; margin-left: 1300px; position: fixed;" class="milo">
+			<img src="8.png" style="height: 100px;">
+		</div>
+		<div style="margin-top: -270px; margin-left: 500px; position: fixed;" class="ruchka">
+			<img src="9.png" style="height:50px;">
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		let score = 0;
+
+		document.querySelector(".score").innerHTML = score;
+	document.querySelector(".kniga").onclick = function(){
+		score = score + 1;
+		document.querySelector(".score").innerHTML = score;
+		document.querySelector(".kniga").style.display = "none";
+		document.querySelector(".k").style.textDecoration = "line-through";
+		alert("Предмет найден!");
+
+
+
+	}
+
+	document.querySelector(".score").innerHTML = score;
+	document.querySelector(".rukzak").onclick = function(){
+		score = score + 1;
+		document.querySelector(".score").innerHTML = score;
+		document.querySelector(".rukzak").style.display = "none";
+		document.querySelector(".ruk").style.textDecoration = "line-through";
+		alert("Предмет найден!");
+
+	}
+
+	document.querySelector(".score").innerHTML = score;
+	document.querySelector(".milo").onclick = function(){
+		score = score + 1;
+		document.querySelector(".score").innerHTML = score;
+		document.querySelector(".milo").style.display = "none";
+		document.querySelector(".m").style.textDecoration = "line-through";
+		alert("Предмет найден!");
+
+	}
+
+	document.querySelector(".score").innerHTML = score;
+	document.querySelector(".ruchka").onclick = function(){
+		score = score + 1;
+		document.querySelector(".score").innerHTML = score;
+		document.querySelector(".ruchka").style.display = "none";
+		document.querySelector(".r").style.textDecoration = "line-through";
+		alert("Предмет найден!");
+
+	}
+
+		
+	</script>
+</body>
+</html>
